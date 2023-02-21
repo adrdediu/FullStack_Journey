@@ -15,7 +15,6 @@ const MainPage = () => {
           Open <code>src/client/MainPage.jsx</code> to edit it.
         </h3>
 
-
         <div className="buttons">
           <a
             className="button button-filled"
