@@ -9,3 +9,18 @@ generator client {
   output = "../server/node_modules/.prisma/client"
 }
 
+model Task {
+  id Int @id @default(autoincrement())
+  description String
+  isDone Boolean @default(false)
+  user User? @relation(fields: [userId], references: [id])
+  userId Int?
+
+}
+model User {
+  id Int @id @default(autoincrement())
+  username String @unique
+  password String
+  tasks Task[]
+
+}

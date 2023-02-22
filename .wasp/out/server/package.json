@@ -10,7 +10,7 @@
     "watch": "nodemon --exec 'npm run build-and-start || exit 1'",
     "db-migrate-prod": "prisma migrate deploy --schema=../db/schema.prisma",
     "db-migrate-dev": "prisma migrate dev --schema=../db/schema.prisma",
-    "start-production": "NODE_ENV=production npm run build-and-start",
+    "start-production": "npm run db-migrate-prod && NODE_ENV=production npm run build-and-start",
     "standard": "standard",
     "postinstall": "patch-package"
   },

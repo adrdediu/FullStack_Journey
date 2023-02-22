@@ -11,14 +11,21 @@
             "file",
             "Dockerfile"
         ],
-        "576e1a40a9d7e838cdbe23a504c9a8d4d53d8614e2bcd2d01838fa63541674b6"
+        "fc947858a99b55ff5963560b5201f3b54e4f302768ba4ab30f3ebe0cab14fb0f"
+    ],
+    [
+        [
+            "dir",
+            "db/migrations/"
+        ],
+        "3cf2075a63d6bcbb8893e3a82c922b0b7f298ac7ecfe2005cc9e316fbfb067eb"
     ],
     [
         [
             "file",
             "db/schema.prisma"
         ],
-        "2cd8e420a90505150d496273ceca091869b33ca4e8bf82c59a3ea678c852d63b"
+        "5432d505e3eee852f6d2d52e03f1b390b41e859c7d31ba0b3ba32979ac4d02a7"
     ],
     [
         [
@@ -53,7 +60,21 @@
             "file",
             "server/package.json"
         ],
-        "944ae7609fb9b3ff6f84ea9212e2f82b4fe70f716f31685fee9cc3cf232f67da"
+        "d5df9887d57283d8c3dfff1613affa4c06f26f2c9ab60feeef0d79773bb519e4"
+    ],
+    [
+        [
+            "file",
+            "server/src/actions/createTask.js"
+        ],
+        "36647bc8f6b75ac6ddd1f81ad0f4ba29cf1f0c56d60eef1fcf91a1d67df0e5c7"
+    ],
+    [
+        [
+            "file",
+            "server/src/actions/updateTask.js"
+        ],
+        "0da4f541b9791b6fe040c24f02c1f7c254ba8808fe05be8f18d7699a8ec48849"
     ],
     [
         [
@@ -67,7 +88,7 @@
             "file",
             "server/src/config.js"
         ],
-        "d7f23a370f15869e6a3920552993c41d5e1a23d8e12a4a9d3a583d22b730a5d6"
+        "afffd69ec2c52d267881f4768a66f88083770ae71018803dce744eb07fda5188"
     ],
     [
         [
@@ -86,9 +107,37 @@
     [
         [
             "file",
+            "server/src/core/auth.js"
+        ],
+        "1a8449886b7e45113e1c2a5406a223225e4a9b2e764eae7c98162b83b2d3eb08"
+    ],
+    [
+        [
+            "file",
+            "server/src/core/auth/prismaMiddleware.js"
+        ],
+        "aede440c2297aa5028e5f387e3392228d8249fb4906aeb95364006aeec039aae"
+    ],
+    [
+        [
+            "file",
             "server/src/dbClient.js"
         ],
-        "20c67ca197da3de2d37528ceaff2e40af910be8177f346c6d5c2b2f983810c43"
+        "5fb53eff5e5eae318e281a8fc1cc433b69688d93c3c82d72415f710a6e75e2af"
+    ],
+    [
+        [
+            "file",
+            "server/src/ext-src/actions.js"
+        ],
+        "4bd57d076668aa747082c3a349fcda4d1d721411fc97517e5630d50b70a59427"
+    ],
+    [
+        [
+            "file",
+            "server/src/ext-src/queries.js"
+        ],
+        "f3aaaeff017ca09895232a6e1b24bafb8baacba47b651da1a89ca13400eec7cf"
     ],
     [
         [
@@ -135,16 +184,79 @@
     [
         [
             "file",
+            "server/src/queries/getTasks.js"
+        ],
+        "28c1e6d45ed3062cfe471ad070c79b8e0751010029535a0333feebc76b972161"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/auth/index.js"
+        ],
+        "00e93c3ab885998695afeb2260448f612c18d076b31103783ef5cf1850c2cdff"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/auth/login.js"
+        ],
+        "0a5d88e1a91ceb6a893e286ed2e1167bf418ca9d226341d6ee6dc6c0fac54318"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/auth/me.js"
+        ],
+        "65ac0f6fe12e13ffeb67b01b62301c4c70e12707985bfa567aea0253649e9151"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/auth/signup.js"
+        ],
+        "7e1975a564b8d450f6c411753bfe4ab45d76b209bb28cfc86eb514236a018219"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/auth/utils.js"
+        ],
+        "5402d4835a71acae84c9d55bf96aa6c0a7575facbb4dde8117170b35d6de4389"
+    ],
+    [
+        [
+            "file",
             "server/src/routes/index.js"
         ],
-        "7fb59b1d6c05570ca1d42d5dbf5868160844165f04e1c75e4be7c372965063fb"
+        "bd024209f256910dc8450851bf64d5309423e04f34bc5941cfb692df7907aa27"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/operations/createTask.js"
+        ],
+        "7fb5a8af5ae80b2faa2242bd716ffdf785dffee120780965cd3a8eb83dd000d2"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/operations/getTasks.js"
+        ],
+        "294eb0bf94e941fc8e4a2d933379b5c8d8f99e797369fc0fe66f1008729f082a"
     ],
     [
         [
             "file",
             "server/src/routes/operations/index.js"
         ],
-        "d09f7dcf78ed2da15f488afb08e62d9dac15f173fdbe779323dfdd75330f5de5"
+        "c9fd3d8e57e30fbbbb2ff0dbe0dd9c9236856a7090489236d056989d6ac78771"
+    ],
+    [
+        [
+            "file",
+            "server/src/routes/operations/updateTask.js"
+        ],
+        "57e65ef836ecc55284f3c8f6af3cb5f75f82972f124d40db7a349b90d2161562"
     ],
     [
         [
@@ -240,9 +352,23 @@
     [
         [
             "file",
+            "web-app/src/actions/createTask.js"
+        ],
+        "4cb8622e0655f13bd6fe2e6c386107d5f85fedfba5ddbd5f678f308fc74244e9"
+    ],
+    [
+        [
+            "file",
             "web-app/src/actions/index.ts"
         ],
         "d6710101a02f23b53972e72d374747047e4251c0177fd5c626c0cffd060cd4a2"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/actions/updateTask.js"
+        ],
+        "89bf4b897ff1268c364df25308f6f2450b2aa43b836821ac804e3e8d254c3cb6"
     ],
     [
         [
@@ -254,6 +380,55 @@
     [
         [
             "file",
+            "web-app/src/auth/forms/Login.js"
+        ],
+        "2a97bf6cb1ba5cd1f271dc83aaac5864a7e5738b72814c7d09bb3e5f70877686"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/forms/Signup.js"
+        ],
+        "712a1513116da68cef5a8dddcf80fbaffa8b733690c52e7c5cc1ef329af591e9"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/login.js"
+        ],
+        "09cb55c7a1969377fc501bc6646e116b8503aa2336f7d9bb0807052e66fed950"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/logout.js"
+        ],
+        "041fe67384d24bf43a61b6ad9160b68309d8d1f5f3dd34f1961c93585d4eff50"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/pages/createAuthRequiredPage.js"
+        ],
+        "e88e3faae4772674e1ed2a08c515ca9b6d04ccb826105bdc762c3df2e5ff5cd8"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/signup.js"
+        ],
+        "e2943a925604b86cb1eba6c8d5a99c6892d8d3b55940c656233aa1163a622a6d"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/auth/useAuth.js"
+        ],
+        "6ab962413a3103fa4e2cb8f7d4751ee93da484f9312c007e0b4d28bfa130a367"
+    ],
+    [
+        [
+            "file",
             "web-app/src/config.js"
         ],
         "a30d5ae7c1b317a7132cac93f4b5bffc3daf11f4f07b5e0d977d063810ffdd11"
@@ -261,16 +436,23 @@
     [
         [
             "file",
-            "web-app/src/ext-src/Main.css"
+            "web-app/src/ext-src/LoginPage.jsx"
         ],
-        "1583ce49887ea575e563dab0c7ad6d2e2e3e6a351ed7c2f80c310641b1456417"
+        "60f7a292ece32f0b12aec741d915cd9f7d017c7e65955ba50a20844faa5583f3"
     ],
     [
         [
             "file",
             "web-app/src/ext-src/MainPage.jsx"
         ],
-        "fa02c7323d1571a198f9f1dda2cd18d45961b86bbf36c2f4878fbd69f6a15048"
+        "74ae919912f3a046442662aa86e9c79be6f2a361b600843eb69200237d3f215b"
+    ],
+    [
+        [
+            "file",
+            "web-app/src/ext-src/SignupPage.jsx"
+        ],
+        "7d9c6a732323b2caa42fbb1b53d74f2871608a4c48115f450e382d628394350a"
     ],
     [
         [
@@ -278,13 +460,6 @@
             "web-app/src/ext-src/react-app-env.d.ts"
         ],
         "c9e89cb25e83121c0c451125de7a0b0569161e2bf18f83bc5f69836403910744"
-    ],
-    [
-        [
-            "file",
-            "web-app/src/ext-src/waspLogo.png"
-        ],
-        "0f05a89eb945d6d7326110e88776e402833b356202b06d0a8bf652e118d3fd2f"
     ],
     [
         [
@@ -338,6 +513,13 @@
     [
         [
             "file",
+            "web-app/src/queries/getTasks.js"
+        ],
+        "7d410329d0bae7f60badb1cbfef7aea9bd8e4b268e795b59d173564eb58504fb"
+    ],
+    [
+        [
+            "file",
             "web-app/src/queries/index.d.ts"
         ],
         "efc70de9916a60e19e0c86aaf955b0be0c999ba5c30139c3b6b98bcc4d382091"
@@ -361,7 +543,7 @@
             "file",
             "web-app/src/router.js"
         ],
-        "65a91308a13f2c8444e3ad7372c1fca85a194b85e8f8f7d11613f78fcfe7af6f"
+        "9e464e4632a7c7d28a8f59ea96438edf2b77c53d7103ed23938a52de0b597523"
     ],
     [
         [
