@@ -1,6 +1,7 @@
 import getTasks from '../queries/getTasks'
 import createTask from '../actions/createTask'
 import updateTask from '../actions/updateTask'
+import logout from '../auth/logout.js'
 import { useQuery } from '../queries'
 
 
@@ -15,6 +16,8 @@ const MainPage = () => {
 
       {isFetching && 'Fetching...'}
       {error && 'Error: ' + error}
+
+      <button onClick={logout}> Logout </button>
     </div>
   )
 }

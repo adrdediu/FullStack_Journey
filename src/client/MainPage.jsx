@@ -1,6 +1,7 @@
 import getTasks from '@wasp/queries/getTasks'
 import createTask from '@wasp/actions/createTask'
 import updateTask from '@wasp/actions/updateTask'
+import logout from '@wasp/auth/logout.js'
 import { useQuery } from '@wasp/queries'
 
 
@@ -15,6 +16,8 @@ const MainPage = () => {
 
       {isFetching && 'Fetching...'}
       {error && 'Error: ' + error}
+
+      <button onClick={logout}> Logout </button>
     </div>
   )
 }
