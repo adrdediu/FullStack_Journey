@@ -1,6 +1,0 @@
-/.wasp/out/server/node_modules
-/.wasp/out/web-app/node_modules
-/.wasp/out/db/node_modules
-
-/.env.server
-/.env.client

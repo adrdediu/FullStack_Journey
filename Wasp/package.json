@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@prisma/client": "^4.5.0",
+    "@railway/cli": "^2.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.5.0"
+  }
+}
